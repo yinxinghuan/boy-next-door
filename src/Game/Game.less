@@ -78,56 +78,49 @@
     z-index: 3;
   }
 
-  // ─── Title card (noir movie poster) — top-of-stage, fades on first tap ───
+  // ─── Title — 80s Americana polaroid / Super 8 home video ───
   &-title {
     position: absolute;
-    top: 6%;
-    left: 0;
-    right: 0;
+    top: 5%;
+    left: 0; right: 0;
     text-align: center;
     color: @ink;
     z-index: 6;
     pointer-events: none;
     animation: lc-title-in 1.2s ease-out 0.3s backwards;
-    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95), 0 0 32px rgba(0, 0, 0, 0.55);
+    text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.55), 0 0 22px rgba(0, 0, 0, 0.6);
 
     &__overline {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
+      font-family: 'American Typewriter', 'Courier New', monospace;
       font-style: italic;
+      font-weight: 600;
       font-size: 12px;
-      color: rgba(244, 236, 223, 0.65);
-      letter-spacing: 0.28em;
-      text-transform: lowercase;
-      margin-bottom: 6px;
-
-      &::before, &::after {
-        content: '';
-        height: 1px;
-        width: 28px;
-        background: rgba(244, 236, 223, 0.35);
-      }
+      color: @red;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      margin-bottom: 8px;
     }
 
     &__main {
-      font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
-      font-weight: 600;
+      font-family: 'Cooper Black', 'Bookman Old Style', Georgia, serif;
+      font-weight: 900;
       font-style: italic;
-      font-size: 42px;
-      line-height: 1.05;
-      letter-spacing: 0.04em;
-      margin: 2px 0 8px;
+      font-size: 48px;
+      line-height: 1.0;
+      letter-spacing: -0.005em;
+      margin: 2px 0 12px;
+      display: inline-block;
+      transform: rotate(-3deg);
     }
 
     &__sub {
-      font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
-      font-style: italic;
+      font-family: 'American Typewriter', 'Courier New', monospace;
+      font-weight: 700;
+      font-style: normal;
       font-size: 12px;
-      letter-spacing: 0.2em;
-      color: rgba(244, 236, 223, 0.7);
-      text-transform: lowercase;
+      letter-spacing: 0.18em;
+      color: @red;
+      text-transform: uppercase;
     }
   }
 

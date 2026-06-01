@@ -53,7 +53,7 @@ const CLIPS: Clip[] = [
     affordance: 'ripple', affordanceX: 50, affordanceY: 50 },
 ];
 
-const CLIMAX_VIDEO = 'clip_06_climax.mp4';
+const CLIMAX_VIDEO = 'clip_06_climax_turn.mp4';
 const CLIMAX_END_FRAME = 'end_06_climax_turn.png';
 const CLIMAX_SUBTITLE = 'Mrs. Marshall?';
 
@@ -245,10 +245,10 @@ export default function Game() {
           <>
             <div className="lc-title">
               <div className="lc-title__overline">
-                <span>the new neighbor · the kitchen window</span>
+                <span>★&nbsp; the new neighbor · the kitchen window &nbsp;★</span>
               </div>
               <div className="lc-title__main">Boy Next Door</div>
-              <div className="lc-title__sub">Iowa &nbsp;·&nbsp; August 1986 &nbsp;·&nbsp; 3:42 pm</div>
+              <div className="lc-title__sub">IOWA &nbsp;·&nbsp; AUG&nbsp;'86 &nbsp;·&nbsp; 3:42 PM</div>
             </div>
             <div className="lc-firsthint">{t('hint.firstTap')}</div>
           </>
